@@ -1,3 +1,50 @@
-<h1>
-    Hello World
-</h1>
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>House Price Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Boston House Price Prediction</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post"><!-- This "predict" will take us to our /predict route.-->
+        <input type="text" name="CRIM" placeholder="Criminal Activities in the Locality" required="required" size="30" /><br>
+    	<input type="text" name="ZN" placeholder="Proportion of Residential Land" required="required" size="30" /><br>
+        <input type="text" name="INDUS" placeholder="Proportion of non-retail Business" required="required" size="30" /><br>
+        <input type="text" name="CHAS" placeholder="1 if Tract Bounds River, 0 Otherwise" required="required" size="30" /><br>
+        <input type="text" name="NOX" placeholder="Nitric Oxide Concentration" required="required" size="30" /><br>
+        <input type="text" name="RM" placeholder="No. of Rooms" required="required" size="30" /><br>
+        <input type="text" name="Age" placeholder="Proportion of units older than 1940" required="required" size="30" /><br>
+        <input type="text" name="DIS" placeholder="Distance to Employment Centres" required="required" size="30" /><br>
+        <input type="text" name="RAD" placeholder="Accessibility to Radial Highways" required="required" size="30" /><br>
+        <input type="text" name="TAX" placeholder="TAX Rate" required="required" size="30" /><br>
+        <input type="text" name="PTRATIO" placeholder="Pupil-Teacher Ratio in the Locality" required="required" size="30" /><br>
+        <input type="text" name="B" placeholder="B" required="required" size="30" /><br>
+        <input type="text" name="LSTAT" placeholder="% Lower Status Population" required="required" size="30" /><br>
+
+       
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        <!-- After clicking the button it'll perform the action mentioned in the form tag in this code. -->
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{prediction_text}}
+ <!-- This is the place holder that we have put in the /predict route. -->
+
+</body>
+</html>
