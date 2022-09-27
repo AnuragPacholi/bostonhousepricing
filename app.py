@@ -49,6 +49,7 @@ def predict():
     # The template which we are returning above is the same as our homepage. That means we'll show the result in the same page. You can show a different page also, just make a template/html page for it.
 
 # THIS ABOVE PREDICTION FUNCTION COULD WORK WITHOUT THE API THAT WE BUILT PERHAPS.
+# ALSO TO DEPLOY THIS APP ON HEROKU YOU NEED THE PROCFILE FILE WHICH IS NEEDED BY THE HEROKU.
 
 
 
