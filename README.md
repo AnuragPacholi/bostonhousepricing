@@ -22,7 +22,3 @@ https://boston-house-price-by-anuragp.herokuapp.com
 
 1. [EMail](mailto:anuragpacholi2000@gmail.com)
 2. [LinkedIn](https://www.linkedin.com/in/anurag-pacholi)
-
-## Deployment of Other Projects that I've Made:
-
-1. [Other Projects (google doc)](https://docs.google.com/document/d/1FqpfjOIX-V-WdYQUmeis2r_GN67gmPd80--5b5EEb1M/edit?usp=sharing)
