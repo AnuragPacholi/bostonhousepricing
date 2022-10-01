@@ -51,7 +51,7 @@ def predict():
 # THIS ABOVE PREDICTION FUNCTION COULD WORK WITHOUT THE API THAT WE BUILT PERHAPS.
 # ALSO TO DEPLOY THIS APP ON HEROKU YOU NEED THE PROCFILE FILE WHICH IS NEEDED BY THE HEROKU.
 
-
+# If you want something like "pushing you data into git and instantly the deployed project changes according to the push" then use docker and pipelines.
 
 if __name__=="__main__": # Needed to run the app.
     app.run(debug=True)
